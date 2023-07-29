@@ -1,6 +1,7 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from './Components/Header/Header';
+import Home from './page/home/home';
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
         <Header />
         <Routes>
           <Route index element={
-            <h1>Hello World 2</h1>
+            <Home/>
           }></Route>
 
           <Route path="movie/:id" element={
