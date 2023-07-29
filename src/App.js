@@ -2,6 +2,8 @@ import './App.css';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from './Components/Header/Header';
 import Home from './page/home/home';
+import MovieList from './Components/movielist/movieList';
+import Movie from './page/movieDetail/movie';
 
 function App() {
   return (
@@ -14,11 +16,11 @@ function App() {
           }></Route>
 
           <Route path="movie/:id" element={
-            <h1>Movie Detail Page</h1>
+            <Movie />
           }></Route>
 
           <Route path="movies/:type" element={
-            <h1>Movie List Page</h1>
+            <MovieList />
           }></Route>
 
           <Route path="/*" element={
